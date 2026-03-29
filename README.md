@@ -10,6 +10,28 @@
 ### Python(FastAPI)
 ### 이유 : AI 관련하여 연동하기 쉬우며 빠르게 개발을 해야할 일이 필요할때 Python언어가 최선의 선택이라고 생각하여 선정.
 
+
+## 프로젝트 구조
+```
+app/ 
+├── main.py 
+├── core/ 
+│ └── config.py 
+├── agent/ 
+│ ├── graph.py 
+│ └── nodes.py 
+├── retriever/ 
+│ ├── loader.py 
+│ ├── embedding.py 
+│ └── vectorstore.py 
+├── routers/ 
+│ ├── routes.py 
+│ ├── ask.py 
+│ └── upload.py 
+├── data/ 
+│ └── sample.pdf
+```
+
 # | 항목	기술 |
 | :-:  | :-: |
 | Language	| Python |
@@ -21,11 +43,13 @@
 | Embedding	| Ollama Embedding |
 | Document | Loader	PyPDFLoader |
 
-## 사용방법 :
-# 1.source code git pull 
-# 2.해당 dir 이동
-# 3.pip install -r requirements.txt
-# 4.uvicorn app.main:app --reload
-# 5.[ollama download url]:(https://ollama.com/download/windows)
-# 6.ollama run llama3
-# 7.localhost:8000/docs 에서 api 실행 가능.
+
+## 실행 방법 :
+### 1.source code git pull 
+### 2.해당 dir 이동
+### 3.pip install -r requirements.txt
+### 4.uvicorn app.main:app --reload
+### 5.[ollama download url]:(https://ollama.com/download/windows)
+### 6.ollama run llama3
+### 7.localhost:8000/docs 에서 api 실행 가능.
+
