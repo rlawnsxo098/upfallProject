@@ -46,7 +46,7 @@ app/
 | Workflow	| LangGraph |
 | Vector DB | FAISS |
 | Embedding	| Ollama Embedding |
-| Document | Loader	PyPDFLoader |
+| Document Loader |	PyPDFLoader |
 
 ## 실행 방법 :
 #### 1.source code git pull 
