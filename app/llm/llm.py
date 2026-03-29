@@ -11,7 +11,10 @@
 from langchain_ollama import OllamaLLM
 
 def get_llm():
-    return OllamaLLM(
-        model="llama3",
-        temperature=0
-    )
+    try:
+        return OllamaLLM(
+            model="llama3",
+            temperature=0
+        )
+    except Exception as e:
+        raise Exception(f"LLM Init Error: {str(e)}")

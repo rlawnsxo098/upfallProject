@@ -8,11 +8,10 @@ router = APIRouter()
 class QuestionRequest(BaseModel):
     question: str
 
-
 @router.post("/ask")
 def ask(
     req: QuestionRequest,
-    graph = Depends(get_graph)   # 🔥 DI
+    graph = Depends(get_graph)
 ):
     try:
         result = graph.invoke({
