@@ -32,10 +32,10 @@ app/
 │ └── sample.pdf
 ```
 
-# | 항목	기술 |
+| 항목|	기술 |
 | :-:  | :-: |
-| Language	| Python |
-| Framework	| FastAPI |
+| Language| Python |
+| Framework| FastAPI |
 | LLM	| Ollama (LLaMA3) |
 | LLM Orchestration	| LangChain |
 | Workflow	| LangGraph |
