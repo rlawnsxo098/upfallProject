@@ -46,9 +46,10 @@ app/
 #### 2.해당 dir 이동
 #### 3.pip install -r requirements.txt
 #### 4.uvicorn app.main:app --reload
-#### 5.[ollama download url]:(https://ollama.com/download/windows)
-#### 6.ollama run llama3
-#### 7.localhost:8000/docs 에서 api 실행 가능.
+#### 5.상위dir에 .env 생성 후 DOWN_LOAD_URL=app/data/ 코드 입력.
+#### 6.[ollama download url]:(https://ollama.com/download/windows)
+#### 7.ollama run llama3
+#### 8.localhost:8000/docs 에서 api 실행 가능.
 #### PDF내 content를 기반으로 대답.
 #### POST localhost:8000/ask 요청 { "question": " Improvement of independent agency capabilities?" }
 
